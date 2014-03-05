@@ -1,26 +1,26 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Tema HPSTR
+description:      Describe tu sitio aquí.
 disqus_shortname: 
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+url:              /hpstr-jekyll-theme/
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Michael Rose
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  bio:            "Just another boring, tattooed, time traveling designer hailing from Buffalo New York."
+  email:          michael@mademistakes.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter:        http://twitter.com/mmistakes
   facebook:       
-  github:         
+  github:         http://github.com/mmistakes
   stackexchange:  
   linkedin:       
   instagram:      
   flickr:         
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:   
+  google_plus:   http://plus.google.com/118238196859537351707
 
 # Background image to be tiled on all pages
 background: 
