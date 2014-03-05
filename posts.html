@@ -1,13 +1,13 @@
 ---
 layout: post-index
 permalink: /posts/
-title: All Posts
-description: "An archive of posts."
+title: Todos los post
+description: "Archivo de posts."
 ---
 
 {% for post in site.posts %}
-    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture this_year %}{{ post.date | localize: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | localize: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
     <article>
