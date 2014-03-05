@@ -1,21 +1,78 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>{{ site.url }}</loc>
+        <loc>/hpstr-jekyll-theme/</loc>
     </url>
     
-    {% for page in site.pages %}
+    
     <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
+        <loc>/hpstr-jekyll-theme//feed.xml</loc>
     </url>
-    {% endfor %}
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//theme-setup/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//sitemap.xml</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//posts/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//index.html</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//tags/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//404.html</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//about/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//page2/index.html</loc>
+    </url>
+    
 
-    {% for post in site.posts %}
+    
     <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
+        <loc>/hpstr-jekyll-theme//background-image/</loc>
     </url>
-    {% endfor %}
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//code-highlighting-post/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//sample-link-post/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//video-post/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//readability-feature-post/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//sample-post-images/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//readability-post/</loc>
+    </url>
+    
+    <url>
+        <loc>/hpstr-jekyll-theme//sample-post/</loc>
+    </url>
+    
 </urlset>
