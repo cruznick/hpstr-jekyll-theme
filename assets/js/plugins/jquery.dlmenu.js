@@ -69,7 +69,11 @@
 			this.$trigger = this.$el.children( '.dl-trigger' );
 			this.$menu = this.$el.children( 'ul.dl-menu' );
 			this.$menuitems = this.$menu.find( 'li:not(.dl-back)' );
+<<<<<<< HEAD
 			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#">atras</a></li>' );
+=======
+			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#">Atras</a></li>' );
+>>>>>>> f3d8875df7e4f9dc81f3063cf2f4293ce791a2d3
 			this.$back = this.$menu.find( 'li.dl-back' );
 		},
 		_initEvents : function() {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
@@ -238,6 +239,27 @@
   <div class="code"><pre><span class="tag">&lt;nav</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">pagination</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">navigation</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     {% if page.previous %}
         <span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ site.url }}{{ page.previous.url }}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">btn</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">title</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ page.previous.title }}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Previous article<span class="tag">&lt;/a&gt;</span>
+=======
+---
+layout: post-index
+title: Ultimas entradas
+description: "Describe this nonsense."
+tags: [Jekyll, theme, themes, responsive, blog, modern]
+image:
+  feature: abstract-1.jpg
+  credit: dargadgetz
+  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+---
+
+{% for post in paginator.posts %}
+<article class="hentry">
+  <header>
+    <div class="entry-meta"><span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | localize: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>{% if site.disqus_shortname and post.comments %}&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="{{ site.url }}{{ post.url }}#disqus_thread">Comentarios</a></span>{% endif %}</div><!-- /.entry-meta -->
+    {% if post.link %}
+      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}"><i class="icon-double-angle-right"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
+    {% else %}
+      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
+>>>>>>> f3d8875df7e4f9dc81f3063cf2f4293ce791a2d3
     {% endif %}
     {% if page.next %}
         <span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ site.url }}{{ page.next.url }}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">btn</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">title</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ page.next.title }}</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Next article<span class="tag">&lt;/a&gt;</span>
@@ -359,9 +381,21 @@
 
 
 <div class="pagination">
+<<<<<<< HEAD
   
     Anterior
   
+=======
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="{{ site.url }}" class="btn">Anterior</a>
+    {% else %}
+      <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="btn">Anterior</a>
+    {% endif %}
+  {% else %}
+    Anterior
+  {% endif %}
+>>>>>>> f3d8875df7e4f9dc81f3063cf2f4293ce791a2d3
   <ul class="inline-list">
     <li>
       
@@ -376,6 +410,7 @@
       </li>
     
   </ul>
+<<<<<<< HEAD
   
     <a href="/hpstr-jekyll-theme//page2" class="btn">Siguiente</a>
   
@@ -396,3 +431,11 @@
 
 </body>
 </html>
+=======
+  {% if paginator.next_page %}
+    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="btn">Siguiente</a>
+  {% else %}
+    Siguiente
+  {% endif %}
+</div><!-- /.pagination -->
+>>>>>>> f3d8875df7e4f9dc81f3063cf2f4293ce791a2d3
