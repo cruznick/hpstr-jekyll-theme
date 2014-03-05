@@ -2,25 +2,25 @@ title:            Tema HPSTR
 description:      Describe tu sitio aquí.
 disqus_shortname: 
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              /hpstr-jekyll-theme/
+url:              http://localhost:4000
 
 # Owner/author information
 owner:
-  name:           Michael Rose
+  name:           Tu nombre
   avatar:         avatar.jpg
-  bio:            "Just another boring, tattooed, time traveling designer hailing from Buffalo New York."
+  bio:            "Describete"
   email:          michael@mademistakes.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        http://twitter.com/mmistakes
+  # Enlaces a redes sociales
+  twitter:        
   facebook:       
-  github:         http://github.com/mmistakes
+  github:         
   stackexchange:  
   linkedin:       
   instagram:      
   flickr:         
   tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:   http://plus.google.com/118238196859537351707
+  #Para Google Authorship https://plus.google.com/authorship
+  google_plus:   
 
 # Background image to be tiled on all pages
 background: 
