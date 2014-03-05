@@ -37,7 +37,6 @@
         <loc>/hpstr-jekyll-theme//about/</loc>
     </url>
     
-<<<<<<< HEAD
     <url>
         <loc>/hpstr-jekyll-theme//page2/index.html</loc>
     </url>
@@ -72,9 +71,6 @@
         <loc>/hpstr-jekyll-theme//readability-post/</loc>
     </url>
     
-=======
-    {% for post in site.posts %}
->>>>>>> f3d8875df7e4f9dc81f3063cf2f4293ce791a2d3
     <url>
         <loc>/hpstr-jekyll-theme//sample-post/</loc>
     </url>
